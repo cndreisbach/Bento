@@ -77,9 +77,9 @@ const CONFIG = {
     },
     {
       id: "5",
-      name: "Feedbin",
-      icon: "rss",
-      link: "https://feedbin.com/",
+      name: "Pinboard",
+      icon: "pin",
+      link: "https://pinboard.in/u:cndreisbach",
     },
     {
       id: "6",
@@ -90,42 +90,42 @@ const CONFIG = {
   ],
 
   secondButtonsContainer: [
-    {
-      id: "1",
-      name: "Music",
-      icon: "headphones",
-      link: "https://open.spotify.com",
-    },
-    {
-      id: "2",
-      name: "twitter",
-      icon: "twitter",
-      link: "https://twitter.com/",
-    },
-    {
-      id: "3",
-      name: "bot",
-      icon: "bot",
-      link: "https://discord.com/app",
-    },
-    {
-      id: "4",
-      name: "Amazon",
-      icon: "shopping-bag",
-      link: "https://amazon.com/",
-    },
-    {
-      id: "5",
-      name: "Hashnode",
-      icon: "pen-tool",
-      link: "https://hashnode.com/",
-    },
-    {
-      id: "6",
-      name: "Figma",
-      icon: "figma",
-      link: "https://figma.com/",
-    },
+    // {
+    //   id: "1",
+    //   name: "Music",
+    //   icon: "headphones",
+    //   link: "https://open.spotify.com",
+    // },
+    // {
+    //   id: "2",
+    //   name: "twitter",
+    //   icon: "twitter",
+    //   link: "https://twitter.com/",
+    // },
+    // {
+    //   id: "3",
+    //   name: "bot",
+    //   icon: "bot",
+    //   link: "https://discord.com/app",
+    // },
+    // {
+    //   id: "4",
+    //   name: "Amazon",
+    //   icon: "shopping-bag",
+    //   link: "https://amazon.com/",
+    // },
+    // {
+    //   id: "5",
+    //   name: "Hashnode",
+    //   icon: "pen-tool",
+    //   link: "https://hashnode.com/",
+    // },
+    // {
+    //   id: "6",
+    //   name: "Figma",
+    //   icon: "figma",
+    //   link: "https://figma.com/",
+    // },
   ],
 
   // ┬  ┬┌─┐┌┬┐┌─┐
@@ -139,42 +139,42 @@ const CONFIG = {
       id: "1",
       links: [
         {
-          name: "Inspirational",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          name: "African Town",
+          link: "https://mynoise.net/NoiseMachines/senegalUrbanLifeAmbienceGenerator.php",
         },
         {
-          name: "Classic",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          name: "Irish Coast",
+          link: "https://mynoise.net/NoiseMachines/windSeaRainNoiseGenerator.php",
         },
         {
-          name: "Oldies",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          name: "Flowing Water",
+          link: "https://mynoise.net/NoiseMachines/levadaSoundGenerator.php",
         },
         {
-          name: "Rock",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          name: "A Soft Murmur",
+          link: "https://asoftmurmur.com/",
         },
       ],
     },
     {
-      icon: "coffee",
+      icon: "loader",
       id: "2",
       links: [
         {
-          name: "Linkedin",
-          link: "https://www.linkedin.com",
+          name: "Wordle",
+          link: "https://www.nytimes.com/games/wordle/index.html",
         },
         {
-          name: "Dribbble",
-          link: "https://www.dribbble.com",
+          name: "Feedbin",
+          link: "https://feedbin.com/",
         },
         {
-          name: "Trello",
-          link: "https://www.trello.com",
+          name: "Marginalia",
+          link: "https://search.marginalia.nu/explore/random",
         },
         {
-          name: "Slack",
-          link: "https://www.slack.com",
+          name: "Pinboard",
+          link: "https://pinboard.in/u:cndreisbach",
         },
       ],
     },
@@ -182,49 +182,49 @@ const CONFIG = {
 
   // Second Links Container
   secondListsContainer: [
-    {
-      icon: "binary",
-      id: "1",
-      links: [
-        {
-          name: "Spotify",
-          link: "https://www.spotify.com",
-        },
-        {
-          name: "Reddit",
-          link: "https://www.reddit.com",
-        },
-        {
-          name: "Hashnode",
-          link: "https://www.hashnode.com",
-        },
-        {
-          name: "Pocket",
-          link: "https://www.pocket.com",
-        },
-      ],
-    },
-    {
-      icon: "github",
-      id: "2",
-      links: [
-        {
-          name: "Front",
-          link: "https://www.reddit.com/r/Frontend/",
-        },
-        {
-          name: "Rust",
-          link: "https://www.reddit.com/r/rust/",
-        },
-        {
-          name: "Go",
-          link: "https://www.reddit.com/r/golang/",
-        },
-        {
-          name: "Repos",
-          link: "https://github.com/migueravila",
-        },
-      ],
-    },
+    // {
+    //   icon: "binary",
+    //   id: "1",
+    //   links: [
+    //     {
+    //       name: "Spotify",
+    //       link: "https://www.spotify.com",
+    //     },
+    //     {
+    //       name: "Reddit",
+    //       link: "https://www.reddit.com",
+    //     },
+    //     {
+    //       name: "Hashnode",
+    //       link: "https://www.hashnode.com",
+    //     },
+    //     {
+    //       name: "Pocket",
+    //       link: "https://www.pocket.com",
+    //     },
+    //   ],
+    // },
+    // {
+    //   icon: "github",
+    //   id: "2",
+    //   links: [
+    //     {
+    //       name: "Front",
+    //       link: "https://www.reddit.com/r/Frontend/",
+    //     },
+    //     {
+    //       name: "Rust",
+    //       link: "https://www.reddit.com/r/rust/",
+    //     },
+    //     {
+    //       name: "Go",
+    //       link: "https://www.reddit.com/r/golang/",
+    //     },
+    //     {
+    //       name: "Repos",
+    //       link: "https://github.com/migueravila",
+    //     },
+    //   ],
+    // },
   ],
 }
