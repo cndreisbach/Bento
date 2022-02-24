@@ -7,15 +7,17 @@ const iconElement = document.querySelector(".weatherIcon")
 const tempElement = document.querySelector(".weatherValue p")
 const descElement = document.querySelector(".weatherDescription p")
 
-const weather = {}
+let weather = {}
 weather.temperature = {
-  unit: "celsius",
+  unit: tempUnit == "C" ? "celsius" : "fahrenheit",
 }
 
 var tempUnit = CONFIG.weatherUnit
 
 const KELVIN = 273.15
 const key = `${CONFIG.weatherKey}`
+const STORE_KEY = "storedWeather"
+
 setPosition()
 
 function setPosition(position) {
@@ -41,22 +43,44 @@ function setPosition(position) {
 }
 
 function getWeather(latitude, longitude) {
-  let api = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`
-  fetch(api)
-    .then(function (response) {
-      let data = response.json()
-      return data
-    })
-    .then(function (data) {
-      let celsius = Math.floor(data.current.temp - KELVIN)
-      weather.temperature.value =
-        tempUnit == "C" ? celsius : (celsius * 9) / 5 + 32
-      weather.description = data.current.weather[0].description
-      weather.iconId = data.current.weather[0].icon
-    })
-    .then(function () {
-      displayWeather()
-    })
+  const now = Date.now()
+  const storedWeather = store.get(STORE_KEY)
+  if (
+    storedWeather &&
+    storedWeather.lat === latitude &&
+    storedWeather.lng === longitude &&
+    storedWeather.time &&
+    now - storedWeather.time < 5 * 60 * 1000
+  ) {
+    weather = storedWeather.results
+    displayWeather()
+  } else {
+    const api = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`
+    fetch(api)
+      .then(function (response) {
+        let data = response.json()
+        return data
+      })
+      .then(function (data) {
+        let celsius = Math.floor(data.current.temp - KELVIN)
+        weather.temperature.value =
+          tempUnit == "C" ? celsius : (celsius * 9) / 5 + 32
+        weather.description = data.current.weather[0].description
+        weather.iconId = data.current.weather[0].icon
+
+        const weatherToStore = {
+          lat: latitude,
+          lng: longitude,
+          time: now,
+          results: weather,
+        }
+
+        store.set(STORE_KEY, weatherToStore)
+      })
+      .then(function () {
+        displayWeather()
+      })
+  }
 }
 
 function displayWeather() {
