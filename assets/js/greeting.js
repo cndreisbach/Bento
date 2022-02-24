@@ -3,21 +3,20 @@
 // └─┘┴└─└─┘└─┘ ┴ ┴┘└┘└─┘└─┘
 // Function to set Greetings
 
-const today = new Date();
-const hour = today.getHours();
-const name = CONFIG.name;
+const today = new Date()
+const hour = today.getHours()
+const name = CONFIG.name
 
-const gree1 = `${CONFIG.greetingNight}\xa0`;
-const gree2 = `${CONFIG.greetingMorning}\xa0`;
-const gree3 = `${CONFIG.greetingAfternoon}\xa0`;
-const gree4 = `${CONFIG.greetingEvening}\xa0`;
+let greeting
 
 if (hour >= 23 || hour < 5) {
-  document.getElementById('greetings').innerText = gree1 + name;
+  greeting = CONFIG.greetingNight
 } else if (hour >= 6 && hour < 12) {
-  document.getElementById('greetings').innerText = gree2 + name;
+  greeting = CONFIG.greetingMorning
 } else if (hour >= 12 && hour < 17) {
-  document.getElementById('greetings').innerText = gree3 + name;
+  greeting = CONFIG.greetingAfternoon
 } else {
-  document.getElementById('greetings').innerText = gree4 + name;
+  greeting = CONFIG.greetingEvening
 }
+
+document.getElementById("greetings").innerText = `${greeting}, ${name}!`

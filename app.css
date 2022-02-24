@@ -1,16 +1,16 @@
-/* 
+/*
 // ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
 // ╠╩╗║╣ ║║║ ║ ║ ║
-// ╚═╝╚═╝╝╚╝ ╩ ╚═╝ 
+// ╚═╝╚═╝╝╚╝ ╩ ╚═╝
 */
 
-/* 
+/*
 //  ┬  ┬┌─┐┬─┐┬┌─┐┌┐ ┬  ┌─┐┌─┐
 //  ┐┌┘├─┤├┬┘│├─┤├┴┐│  ├┤ └─┐
-//  ┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘ 
+//  ┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"); /* Font Import */
 
 :root {
   /* Font Size */
@@ -54,17 +54,17 @@
   ); /* Filter color */
 }
 
-/* 
+/*
 //  ┌─┐┌┬┐┬ ┬┬  ┌─┐┌─┐
 //  └─┐ │ └┬┘│  ├┤ └─┐
-//  └─┘ ┴  ┴ ┴─┘└─┘└─┘ 
+//  └─┘ ┴  ┴ ┴─┘└─┘└─┘
 */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: 0.2s ease-in-out;
 }
 
@@ -264,16 +264,16 @@ body {
   grid-column: 2;
 }
 .button__3 {
-  grid-row: 2;
-  grid-column: 1;
+  grid-row: 1;
+  grid-column: 3;
 }
 .button__4 {
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 1;
 }
 .button__5 {
-  grid-row: 1;
-  grid-column: 3;
+  grid-row: 2;
+  grid-column: 2;
 }
 .button__6 {
   grid-row: 2;

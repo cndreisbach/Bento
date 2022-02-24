@@ -12,15 +12,15 @@ const CONFIG = {
 
   // General
   name: "Clinton",
-  imageBackground: false,
+  imageBackground: true,
   openInNewTab: true,
   twelveHourFormat: false,
 
   // Greetings
-  greetingMorning: "Good morning!",
-  greetingAfternoon: "Good afternoon,",
-  greetingEvening: "Good evening,",
-  greetingNight: "Good evening,",
+  greetingMorning: "Good morning",
+  greetingAfternoon: "Good afternoon",
+  greetingEvening: "Good evening",
+  greetingNight: "Good evening",
 
   // Layout
   bentoLayout: "bento", // 'bento', 'lists', 'buttons'
